@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>YEP!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Libraries -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Internal Style -->
+<style>
+  html {scroll-behavior: smooth;}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor {font-size:300px}
+  .fa-coffee {font-size:300px}
+  .br {margin-bottom: 20em}
+  .br2 {margin-bottom: 10em}
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+</style>
+
+<!-- Content -->
+<body>
+  
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#Our Goals" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Goals</a>
+    <a href="#Meet Our Members" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Orientation</a>
+    <a href="#Full Disclosure" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Disclosure</a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#Our Goals" class="w3-bar-item w3-button w3-padding-large">Goals</a>
+    <a href="#Meet Our Members" class="w3-bar-item w3-button w3-padding-large">Orientation</a>
+    <a href="#Full Disclosure" class="w3-bar-item w3-button w3-padding-large">Disclosure</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">YEP!</h1>
+  <p class="w3-xlarge">Young Engineering Professionals<br>Connecting Inquiring Students with Early Career Engineers</p>
+  <button onclick="window.location.href = 'mailto:YEPmailbox@gmail.com?subject=YEP! Question';" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"> Ask a Question</button>
+</header>
+
+<!-- First Grid -->
+<a name="Our Goals"></a>
+<div class="w3-container">
+  <div class="w3-padding-64 w3-center w3-content">
+    <h1>Our Goals</h1>
+    <h4 class="w3-padding-32" ><i>"If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."</i><br>-Abe Lincoln</h4>
+    <p class="w3-text-grey">Spending time preparing today can make a remarkable difference tomorrow. We believe that a promising future begins 
+      with planning, and that planning starts with questions. Our goal is to facilitate conversations about students’ personal interests and 
+      academic pursuits to prepare for stable careers in the world of engineering. We wish to engage and encourage students in a time of academic 
+      and professional uncertainty, and strive to answer the questions that we ourselves were asking early in our scholastic journeys:
+    </p>
+    <i>
+      <h4>"What am I learning now that might be important later?"</h4>
+      <h4>"How can I balance my social life with my academic schedule?"</h4>
+      <h4>"When might I be academically satisfied  - is there an end to all of the studying?"</h4>
+    </i>
+  </div>
+  <div class="w3-center">
+    <i class="fa fa-anchor w3-text-red"></i>
+    <p class="w3-text-grey w3-padding-32  w3-content">Classroom learning today is very different than it was a year ago. Though we at YEP! may never 
+      experience what a classroom is like in this new world, we hope to help guide early ambitions for academic and professional goals. We 
+      are a small house of locally grown Colorado engineers who wish to grow our network within our community by giving back - one question at a time.
+    </p>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<a name="Meet Our Members"></a>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <h1>Meet the Team</h1>
+    <div class="w3-quarter w3-center w3-padding-32">
+      <image id="profileImage" src="Images/Turner_Photo.jpg" width=180 height=200 alt="Brian Turner profile"/>
+      <h3>Brian Turner</h3>
+      <p class="w3-text-grey w3-content w3-row-padding">
+        I grew up here in Littleton, Colorado, and have a degree in Engineering Physics. As a proud member of the LGBT community, 
+        fellow band geek, and avid cryptocurrency enthusiast, I am excited for the opportunity to answer your questions!
+      </p>
+    </div>  
+    <div class="w3-quarter w3-center w3-padding-32">
+      <image id="profileImage" src="Images/Seth_Photo.jpeg" width=180 height=200 alt="Seth Lisle profile"/>
+      <h3>Seth Lisle</h3>
+      <p class="w3-text-grey w3-containt w3-row-padding">
+        Although my roots are in Texas, Colorado has been my home for the past six years. I work as a systems engineer; in 
+        my free time I am a road cyclist and a high school drumline instructor. If you ask me about snare drum technique, be 
+        prepared for lots of opinions.
+      </p>
+    </div>
+    <div class="w3-quarter w3-center w3-padding-32">
+    <image id="profileImage" src="Images/BColeman_Photo.jpeg" width=180 height=200 alt="Brian Coleman profile"/>
+      <h3>Brian Coleman</h3>
+      <p class="w3-text-grey w3-content w3-row-padding">
+        I grew up in both Silverthorne and Estes Park. My background is in mechanical engineering and I currently work as 
+        a systems engineer. I am an avid golfer, mountain biker, and craft beer connoisseur.
+      </p>
+    </div>
+    <div class="w3-quarter w3-cente w3-padding-32">
+      <image id="profileImage" src="Images/Vegas.jpeg" width=180 height=200 alt="Garret DeCarlo profile"/>
+      <h3>Garret DeCarlo</h3>
+      <p class="w3-text-grey w3-content w3-row-padding">
+        I am a software engineer from Aurora. Please feel free to ask me anything from what
+        programming is like in the professional workspace to what the best Colorado fishing spots are (spoiler: 
+        <i>I haven't figured that one out quite yet &#x1F41F;).</i>
+      </p>
+    </div>
+    <div class="w3-half w3-center">
+      <image id="profileImage" src="Images/Group_Photo.jpeg" width=300 height=225 alt="YEP group photo"/>
+      <p class="w3-text-grey w3-row-padding w3-content">
+        We are a small group of engineers from Englewood, Colorado. We have a diverse set of undergraduate backgrounds 
+        that include physics, mechanical, and software engineering.
+      </p>
+    </div>
+    <div class="w3-half w3-center">
+      <i class="fa fa-coffee w3-text-grey"></i>
+    </div>
+</div>
+
+<!-- Third Grid -->
+<a name="Full Disclosure"></a>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>Disclosure</h1><br>
+      <p>YEP! is a homegrown volunteering project.
+      <p>If you are a minor, please have your parent or legal gaurdian reach out to us.</p>
+      <p>We will not ask for money or personal information. We do not offer course tutorings at this time.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="w3-center">
+  <a href="https://aws.amazon.com/what-is-cloud-computing"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS Cloud Computing"></a>
+</div>
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+ <p>HTML Template & CSS Stylesheets provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
