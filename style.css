@@ -1,0 +1,136 @@
+html {scroll-behavior: smooth;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor {font-size:300px}
+.fa-coffee {font-size:300px}
+.br {margin-bottom: 20em}
+.br2 {margin-bottom: 10em}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 4px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    width: 100%;
+    display: none; /* Hide columns by default */
+    /* display: inline-block; */
+    float: left;
+  }
+ 
+@media screen and (min-width: 552px) and (max-width: 1104px) {
+        .column {
+        float: left;
+        width: 50%;
+        display: none;
+    }
+}
+.container_fade:hover, .container_fade:active .overlay {
+    opacity: 1;
+  }
+
+@media screen and (min-width: 1104px) {
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 25%;
+    display: none; /* Hide columns by default */
+    }
+
+    .container_fade:hover .overlay {
+        opacity: 1;
+    }
+}
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    width:100%;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+
+  .container_fade {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image_fade {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    width:100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: orangered;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    width:95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
