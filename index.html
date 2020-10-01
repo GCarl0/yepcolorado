@@ -38,7 +38,7 @@
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">YEP!</h1>
   <p class="w3-xlarge">Young Engineering Professionals<br>Connecting Inquiring Students with Early Career Engineers</p>
-  <button onclick="window.location.href = 'mailto:YEPmailbox@gmail.com?subject=YEP! Question';" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"> Ask a Question</button>
+  <button onclick="window.location.href = 'mailto:YEPmailbox@gmail.com?subject=YEP! Question';" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Ask a Question</button>
 </header>
 
 <!-- First Grid -->
@@ -48,21 +48,21 @@
     <h1>Our Goals</h1>
     <h4 class="w3-padding-32" ><i>"If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."</i><br>-Abe Lincoln</h4>
     <p class="w3-text-grey">Spending time preparing today can make a remarkable difference tomorrow. We believe that a promising future begins 
-      with planning, and that planning starts with questions. Our goal is to facilitate conversations about students’ personal interests and 
-      academic pursuits to prepare for stable careers in the world of engineering. We wish to engage and encourage students in a time of academic 
-      and professional uncertainty, and strive to answer the questions that we ourselves were asking early in our scholastic journeys:
+      with planning, and that planning starts with questions. Our goal is to bridge the gap between college-bound students and early-career engineers 
+      by facilitating conversations about students’ own personal interests within engineering. We wish to engage students in a time of academic and 
+      professional uncertainty, and strive to answer the questions that we ourselves were asking early in our scholastic journeys:
     </p>
     <i>
-      <h4>"What is it like in the life of a modern <span id="spin"></span> engineer?"</h4>
-      <h4>"What are the costs and benefits of being an engineer - is it worth it?"</h4>
-      <h4>"When might I be academically satisfied  - is there an end to all of the studying?"</h4>
+      <h4>"What is it like to be a modern-day <span id="spin"></span> engineer?"</h4>
+      <h4>"When might I be academically satisfied - is a bachelor's degree enough?"</h4>
+      <h4>"What type(s) of engineering should I specialize in - which fields might interest me?"</h4>
     </i>
   </div>
   <div class="w3-center">
     <i class="fa fa-anchor w3-text-red"></i>
     <p class="w3-text-grey w3-padding-32  w3-content">Classroom learning today is very different than it was a year ago. Though we at YEP! may never 
-      experience what a classroom is like in this new world, we hope to help guide early ambitions for academic and professional goals. We 
-      are a small house of locally grown Colorado engineers who wish to grow our network within our community by giving back - one question at a time.
+      experience what a classroom is like during these times, we hope to help guide early ambitions for academic and professional goals. We 
+      are a group of locally grown Colorado engineers who wish to branch out within our community by giving back - one question at a time.
     </p>
   </div>
 </div>
@@ -71,12 +71,14 @@
 <a name="Resources"></a>
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <h1>Your Resources</h1>
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all'); highlight(this)"> Show all</button>
-    <button class="btn" onclick="filterSelection('mechanical'); highlight(this)"> Mechanical</button>
-    <!-- <button class="btn" onclick="filterSelection('petroleum')"> Petroleum</button> -->
-    <button class="btn" onclick="filterSelection('physics'); highlight(this)"> Physics</button>
-    <button class="btn" onclick="filterSelection('software'); highlight(this)"> Software</button>
+  <div class="w3-padding-32">
+    <div id="myBtnContainer">
+      <button class="button select" onclick="filterSelection('all'); highlight(this)"> Show all</button>
+      <button class="button" onclick="filterSelection('mechanical'); highlight(this)"> Mechanical</button>
+      <!-- <button class="btn" onclick="filterSelection('petroleum')"> Petroleum</button> -->
+      <button class="button" onclick="filterSelection('physics'); highlight(this)"> Physics</button>
+      <button class="button" onclick="filterSelection('software'); highlight(this)"> Software</button>
+    </div>
   </div>
 
   <!-- Portfolio Gallery Grid -->
@@ -115,24 +117,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="column petroleum">
-      <div class="content">
-        <img src="/w3images/people1.jpg" alt="Sarah Waters Profile" style="width:90%">
-        <h4>Sarah Waters</h4>
-        <p>filler text filler text filler text filler text filler text filler text filler text filler text filler text 
-          filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text 
-        </p>
-      </div>
-    </div>
-    <div class="column petroleum">
-      <div class="content">
-        <img src="/w3images/people2.jpg" alt="Nate Ramirez Profile" style="width:90%">
-        <h4>Nate Ramirez</h4>
-        <p>filler text filler text filler text filler text filler text filler text filler text filler text filler text 
-          filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text 
-        </p>
-      </div>
-    </div> -->
     <div class="column physics">
       <div class="flip-card content">
         <div class="flip-card-inner">
@@ -167,6 +151,7 @@
     </div>
   </div>
 </div>
+
 <!-- Third Grid -->
 <a name="Disclosure"></a>
 <div class="w3-row-padding w3-padding-64 w3-container">

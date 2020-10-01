@@ -6,188 +6,189 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .br {margin-bottom: 20em}
 .br2 {margin-bottom: 10em}
 h1 {text-align: center;}
-p {text-align: center;}
+p {text-align: center; font-size: medium;}
 div {text-align: center;}
 
 * {
     box-sizing: border-box;
   }
   
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 4px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    width: 100%;
-    display: none; /* Hide columns by default */
-    /* display: inline-block; */
-    float: left;
-  }
- 
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 4px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 100%;
+  display: none; /* Hide columns by default */
+  /* display: inline-block; */
+  float: left;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1200px) {
-  .column {
-    float: left;
-    width: 50%;
-    display: none;
-  }
+.column {
+  float: left;
+  width: 50%;
+  display: none;
+}
 }
 .container_fade:hover, .container_fade:active .overlay {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner{
-  transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 @media screen and (min-width: 1200px) {
-    /* Create three equal columns that floats next to each other */
-    .column {
-    float: left;
-    width: 25%;
-    display: none; /* Hide columns by default */
-    }
+  /* Create three equal columns that floats next to each other */
+  .column {
+  float: left;
+  width: 25%;
+  display: none; /* Hide columns by default */
+  }
 
-    .container_fade:hover .overlay {
-        opacity: 1;
-    }
+  .container_fade:hover .overlay {
+      opacity: 1;
+  }
 }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-    height: 100%;
-    width:100%;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border-radius: 100%;
-    height: auto;
-    width: 150px;
-    padding: 6px 10px;
-    background-color: white;
-    cursor: pointer;
-    
-  }
-  
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 100%;
+  width:100%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.button {
+  outline: gainsboro;
+  height: auto;
+  width: 150px;
+  background-color: lightgray;
+  position: relative;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
   /* Add a grey background color on mouse-over */
-  .btn:hover {
+  .button:hover {
     background-color: #ddd;
   }
   
   /* Add a dark background color to the active button */
-  .btn.active {
+  .button.select {
     background-color: #666;
-     color: white;
+      color: white;
   }
+  
+.container_fade {
+  position: relative;
+  width: 100%;
+}
 
-  .container_fade {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image_fade {
-    display: block;
-    background-color: white;
-    padding: 10px;
-    height: 100%;
-    width:100%;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: orangered;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    width:95%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.image_fade {
+  display: block;
+  background-color: white;
+  padding: 10px;
+  height: 100%;
+  width:100%;
+}
 
-  .flip-card {
-    background-color: transparent;
-    width: 322px;
-    height: 375px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: white;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: orangered;
-    color: white;
-    transform: rotateY(180deg);
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: orangered;
+}
 
-  #spin {
-    color: orangered;
-  }
-  #spin:after {
-    content:"";
-    animation: spin 10s linear infinite;
-  }
+.text {
+  color: white;
+  font-size: 20px;
+  width:95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-  @keyframes spin {
-    0% { content:"software"; }
-    /* 25% { content:"civil"; } */
-    50% { content:"mechanical"; }
-    /* 75% { content:"petroleum"; } */
-    100% { content:"physics"; }
-  }
+.flip-card {
+  background-color: transparent;
+  width: 322px;
+  height: 375px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: orangered;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#spin {
+  color: orangered;
+}
+
+#spin:after {
+  content:"";
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% { content:"software"; }
+  /* 25% { content:"civil"; } */
+  50% { content:"mechanical"; }
+  /* 75% { content:"petroleum"; } */
+  100% { content:"physics"; }
+}

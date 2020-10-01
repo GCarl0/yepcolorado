@@ -47,10 +47,10 @@ function w3RemoveClass(element, name) {
 // Add active class to the current button (highlight it)
 function highlight(butt) {
     var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
+    var btns = btnContainer.getElementsByClassName("button");
     for (var i = 0; i < btns.length; i++) {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          butt.className += " active";
+          var current = document.getElementsByClassName("select");
+          current[0].className = current[0].className.replace(" select", "");
+          butt.className += " select";
     }
 }
