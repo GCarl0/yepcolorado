@@ -192,3 +192,10 @@ transform: rotateY(180deg);
   /* 75% { content:"petroleum"; } */
   100% { content:"physics"; }
 }
+
+.link {
+  position:absolute;
+  width:100%;
+  bottom:3%;
+  text-align:center;
+}
